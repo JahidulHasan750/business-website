@@ -1,0 +1,34 @@
+.section-1{
+    display: grid;
+    gap:25px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.footerWarpper{
+    align-self: end;
+}
+
+.section-1__content--text{
+    font-size: var(--sub);
+    font-family: var(--font2);
+    padding-right: 10px;
+}
+
+.section-1__images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+    padding-right: 30px;
+}
+
+.section-1__btn{
+    justify-self: center;
+}
+
+@media(max-width:568px){
+    .section-1__images{
+       
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}

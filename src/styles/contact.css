@@ -1,0 +1,49 @@
+body{
+    min-height: 100vh;
+    display: grid;
+}
+.section2{
+    padding-right: 25px ;
+}
+.green__bg{
+    align-self: start;
+}
+.footerWarpper{
+    align-self: end;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-family: var(--font-2);
+    font-size: var(--sub);
+}
+input , textarea{
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1.5px solid #212529 ;
+    border-radius: 5px;
+    background-color: #eeeeee;
+}
+button{
+    margin-top: 10px;
+}
+
+
+@media(max-width:1024px){
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    img{
+        padding: none;
+    }
+    .section2__left{
+        order: 1;
+    }
+    .section2__right{
+        order: 0;
+
+    }
+}
